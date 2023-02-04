@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas de listas</title>
+    <style>
+        ol{
+            list-style: lower-roman;
+        }
+        .letra{
+            list-style:lower-alpha;
+        }
+        .circle{
+            list-style: inside;
+        }
+        .cuadrado{
+            list-style: square ;
+        }
+        .number{
+            list-style: decimal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aircreaft Types</h1>
+    <ol>
+        <li>General Aviation</li>
+        <ul class="letra">
+            <li>Single: Aviation Aircraft</li>
+            <li>Dual-Egine Aircraft</li>
+        </ul>
+        <li>Commercial Aviation</li>
+        <ul class="circle">
+            <li>Dual Engine</li>
+            <li>Tri-Engine</li>
+        </ul>
+    </ol>
+
+    <h1>Letras</h1>
+    <ul>
+        <li class="cuadrado">A</li>
+        <ul>
+            <li class="circle">B</li>
+            <ol>
+                <li class="number">C</li>
+                <li class="number">D</li>
+            </ol>
+            <li class="circle">E</li>
+            <ul>
+                <li class="cuadrado">F</li>
+                <li class="cuadrado">G</li>
+            </ul>
+        </ul>
+        <li class="cuadrado">B</li>
+    </ul>
+</body>
+</html>

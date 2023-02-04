@@ -1,0 +1,67 @@
+/* universal */
+*
+{
+    /* Tipo de letra*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Usando id */
+#main
+{
+    /* Color de fondo*/
+    background-color: grey;
+}
+
+/* todos los elementos que tengan la class */
+/* class se usa .class */
+h1.especial
+{
+    /* Color de la letra */
+    color:blue;
+}
+
+/* aplica a las dos etiquetas */
+h2,
+h3
+{
+    /* Crear un borde de tamaño 1, de forma solica y color orange */
+    border: 1px solid orange;
+}
+
+/* solo a la etiqueta */
+li
+{
+    /* color de la letra */
+    color: red;
+}
+
+/* lista dentro de otra lista o una etiqueta dentro de una etiqueta */
+li li
+{
+    color: green;
+}
+
+/* img que sea hija de p o una etiqueta que sea hija directa de la otra etiqueta*/
+p > img
+{
+    border: 5px solid red;
+}
+
+
+/* etiqueta que tenga el valor del atributo */
+img[alt='segundo']
+{
+    border: 5px solid rgb(7, 7, 7);
+}
+
+/* la etiqueta que este antes de la etiqueta */
+p ~ h3.antes
+{
+    background-color: pink;
+}
+
+/* la etiqueta que esta dentro de la otra etiqueta */
+p + h3
+{
+    background-color: blue;
+}

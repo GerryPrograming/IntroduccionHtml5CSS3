@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de formulario</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+            font-size: 22px;
+            text-align: center;
+        }
+        .first{
+            background-color: grey;
+        }
+        .first-color{
+            background-color: aliceblue;
+        }
+        .datos{
+            margin: 0 136px;
+        }
+
+        .uno{
+            margin: 0 2px;
+        }
+        .dos{
+            margin: 0 -12px;
+        }
+        .tres{
+            margin: 0 2px;
+        }
+        .cuatro{
+            margin: 0 40px;
+        }
+        .tamaño
+        {
+            width: 185px;
+        }
+        .cinco{
+            margin: 0 84px;
+        }
+        .seis{
+            margin: 0 2px;
+        }
+        .siete{
+            margin: 0 310px;
+        }
+        .tamaño2{
+            width: 330px;
+        }
+        .mover{
+            margin: 0 37px;
+        }
+        .second{
+            background-color: burlywood;
+        }
+        .octavo{
+            margin: 10px 30px;
+            
+        }
+        .move2{
+            margin: 0 80px;
+        }
+        .move3{
+            
+            margin-left: 40px;
+        }
+        .tree{
+            background-color: rgb(228, 146, 146);
+        }
+        .mover4{
+            margin-left: 120px;
+        }
+        button
+        {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        hoja de inscripción <br> en los ciclos formativos de grado superior
+    </h1>
+    <form action="POST" action="/11_datos_formulario.html"">
+        <fieldset class="first">
+            <legend class="first-color">Datos personales</legend>
+        
+            <p 
+                <label class="uno" for="nombre">Nombre</label>
+                <label class="datos" for="apellido">Apellido:</label>
+                <label class="dos" for="dni">DNI</label><br>
+
+                <input type="text" name="nombre" required>
+                <input type="text" name="apellido" required>
+                <input type="text" name="dni" required>
+            </p>
+            <p>
+                <label class="tres" for="localidad-nacimiento">Localidad-Nacimiento</label>
+                <label class="cuatro" for="provincia"> Provincia</label>
+                <label class="cinco" for="fecha-nacimiento">Fecha Nacimiento</label><br>
+                <input type="text" name="localidad-nacimiento" required>
+                <select class="tamaño" name="provincia" required>
+                    <option value="mex">Mexico</option>
+                    <option value="col">Colombia</option>
+                    <option value="esp">España</option>
+                    <option value="bra">Brasil</option>
+                    <option value="arg">Argentina</option>
+                </select>
+                <input class="tamaño" type="week" name="fecha-nacimiento" required>
+            </p>
+            <p>
+                <label class="seis" for="direccion">Direccion</label>
+                <label class="siete" for="codigo-postal"> Codigo Postal</label><br>
+                <input class="tamaño2" type="text" name="direcccion" required>
+                <input class="mover" type="number">
+            </p>
+        </fieldset>
+        <fieldset class="second">
+            <legend class="first-color">Forma de Acceso</legend>
+            <p class="octavo">
+                <input type="radio" for="acceso-dir" value="Directo"> Directo <br>
+                <div class="move2">
+                    <input type="radio" for="aceso-dir" value="Bachillerato-logse">Bachillerato LOGSE. Modalidad
+                    <input type="text" name="aceso-dir"><br>
+                    <input type="radio" for="aceso-dir" value="Bachillerato-exp">Bachillerato Experimental <br>
+                    <input type="radio" for="aceso-dir" value="cou">COU. opcional
+                    <input type="text" name="aceso-dir"><br>
+                    <input type="radio" for="aceso-dir" value="fp2"> FP2<br>
+                    <input type="radio" for="aceso-dir" value="otros">Otros(especifique)
+                    <input type="text" name="aceso-dir"><br>
+                </div>
+                <input class="move3" type="radio" for="acceso" value="Prueba libre"> Prueba libre <br>
+            </p>
+        </fieldset>
+        <fieldset class="tree">
+            <legend class="first-color">Documentacion Adjuntada</legend>
+            <p>
+                <input type="checkbox" name="copia-dni">Fotocopia dni 
+                <input class="mover4"type="checkbox" name="certificado">Certificado academico 
+            </p>
+            <p>
+                <input type="checkbox" name="otros" for="otros"> Otros documentos(especifique)
+                <input type="text" name="otros">
+            </p>
+        </fieldset>
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>

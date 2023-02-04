@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de tablas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla simple</h1>
+    <!-- Creacion de tablas -->
+    <table>
+        <!-- Filas-->
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Gerardo</td>
+            <td>Garduño</td>
+            <td>Toluca</td>
+            <td>5454541545</td>
+            <td>hola@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Lopez</td>
+            <td>Ciudad de Mexico</td>
+            <td>1515454545</td>
+            <td>juan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Mondragon</td>
+            <td>España</td>
+            <td>54545451</td>
+            <td>maria_mon@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Aquiles</td>
+            <td>Martinez</td>
+            <td>Marruecos</td>
+            <td>54654454548</td>
+            <td>aqui_es@gmail.com</td>
+        </tr>
+    </table>
+
+    <h1>Tabla completa</h1>
+    <!--Tabla compleja -->
+    <table>
+        <!-- Agrupàcion de los grupos-->
+        <colgroup>
+            <col span="3" style="background-color: grey;" />
+            <col style="background-color: yellow;" />
+            <col style="background-color: green;" />
+        </colgroup>
+        <!--Titulo de la tabla-->
+        <caption>Alumnos matriculados</caption>
+        <!-- Cabeza de la pagina-->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <!-- Cuerpo de la tabla-->
+        <tbody>
+            <tr>
+                <td>Gerardo</td>
+                <td>Garduño</td>
+                <td>Toluca</td>
+                <td>5454541545</td>
+                <td>hola@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Lopez</td>
+                <td>Ciudad de Mexico</td>
+                <td>1515454545</td>
+                <td>juan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Mondragon</td>
+                <td>España</td>
+                <td>54545451</td>
+                <td>maria_mon@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Aquiles</td>
+                <td>Martinez</td>
+                <td>Marruecos</td>
+                <td>54654454548</td>
+                <td>aqui_es@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> Pie de la tabla en donde se ponen otros datos </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Creando una tabla usando atributos-->
+    <h1>Tabla compleja con atributos</h1>
+    <table>
+        <caption>HORARIO DE CLASES CURSO 2018-2019</caption>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>8:00</td>
+                    <td rowspan="2">Matematicas</td>
+                    <td>Lengua</td>
+                    <td>Ingles</td>
+                    <td colspan="2">Ciencias</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>Historia</td>
+                    <td>Ciencias</td>
+                    <td>Matematicas</td>
+                    <td>Lengua</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <th colspan="5">RECREO</th>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>Ingles</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td>Matematicas</td>
+                    <td>Lengua</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>Historia</td>
+                    <td>Ciencia</td>
+                    <td>Matematicas</td>
+                    <td>Ingles</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

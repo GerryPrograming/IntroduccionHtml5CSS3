@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica de los selectors</title>
+    <link rel="stylesheet" type="text/css" href="/css/03_practica.css">
+</head>
+<body>
+    <h1>Ejercicio practico con Tablas</h1>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td class="color-azul" colspan="3"><img src="/ipod4.jpg" alt="ipod 4" width="120px"></td>
+                <td class="color-azul" colspan="2"><img src="/ipod8.jpg" alt="ipod 8" width="80px"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tamaño">
+                <th class="color-rojo">Capacidad</th>
+                    <td class="color-gris">2GB</td> 
+                    <td class="color-gris">4GB</td>
+                    <td class="color-gris">8GB</td>
+                    <td class="color-gris">32GB</td>
+                    <td class="color-gris">64GB</td>
+            </tr>
+            <tr class="tamaño2">
+                <th class="color-rojo">Colores</th>
+                <th class="text">Blanco</th>
+                <td>
+                    <ul>
+                        <li>Negro</li>
+                        <li>Rosa</li>
+                        <li>Dorado</li>
+                    </ul>
+                </td>
+                <th class="text">Negro</th>
+                <td class="color-azul" colspan="2">
+                    <ul >
+                        <li class="text-color">Negro</li>
+                        <li class="text-color">Blanco</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="color-rojo">Pantalla</th>
+                <th colspan="3" class="color-azul negrita" > 3 pulgadas</th>
+                <th colspan="2" class="color-azul negrita" > 7 pulgadas</th>
+            </tr>
+            <tr class=" tamaño3">
+                <th rowspan="2" class="color-rojo">Tiempo de carga</th>
+                <th class="color-azul" colspan="3" rowspan="2">1 hora</th>
+                <th colspan="2" class="color-amarillo">5 horas</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="color-azul"> 30 minutos por 75%</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

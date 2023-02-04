@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores dentro de una pagina web</title>
+    <!-- Agregar los estilos css dentro de un archivo-->
+    <link rel="stylesheet" type="text/css" href="css/01_estilos_selectores.css">
+</head>
+<body>
+
+    
+    <!-- Selecciones con identificador-->
+    <p id="main">
+        Este parrafo se selecciona con el selector #id
+    </p>
+
+    <!-- Seleccion de elementos con clase-->
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+
+    <!--Seleccion de varios elementos-->
+    <h2>Varios elementos</h2>
+    <h3>Varios elementos</h3>
+
+    <!-- dentro de otros-->
+    <ul>
+        <li>Primero</li>
+        <li>Segundo
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Hijo directo-->
+    <h3 class="antes">Antes</h3>
+
+    <p>
+        <img src="/robot.webp" alt="robot" width="200px">
+        <span><img src="/mono.jpg" alt="mono" width="350px"></span>
+    </p>
+    <h3>Despues</h3>
+</body>
+</html>

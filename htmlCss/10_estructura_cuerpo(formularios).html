@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de formularios</title>
+</head>
+<body>
+    <!-- Creacion de formularios -->
+    <form action="POST" action="/11_datos_formulario.html">
+        <p>
+            <!-- Muestra el contenido y muestra una caja de texto-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="nombre de usuario">
+        </p>
+
+        <p>
+            <label for="provincia">Provincia</label>
+            <!-- Creacion de opciones dentro del formulario-->
+            <select name="provincia" multiple>
+                <option value="Z">Zaragoza</option>
+                <option>Huesca</option>
+                <option>Turuel</option>
+            </select>    
+        </p>
+
+        <p>
+            <!-- Crear una area de texto-->
+            <textarea name="area de texto" cols="10" rows="10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur molestias labore 
+                sit cumque ipsum sint nesciunt deserunt cum nostrum minima qui praesentium officiis voluptate 
+                deleniti, tempora necessitatibus magnam. Voluptates.
+            </textarea>
+        </p>
+
+        <p>
+            <!-- Crear un boton para enviar informacion, borrar o mandar a la pagina-->
+            <button type="button"> Haz click aqui</button>
+        </p>
+
+        <!-- Creacion de un cuerpo de formulario-->
+        <fieldset>
+            <!--Encabezado del formulario-->
+            <legend>Datos personales</legend>
+            <p>
+                <!-- Texto-->
+                <label for="nombre">Nombre:</label>
+                <!-- Texto alterno y que es requerido a fuerza-->
+                <input type="text" name="nombre" placeholder="Inserta el nombre" required>
+            </p>
+            <p>
+                <!-- Texto-->
+                <label for="apellido">Apellido:</label>
+                <!-- Texto alterno y que es requerido a fuerza-->
+                <input type="text" name="apellido" placeholder="Inserta tu apellido" required>
+            </p>
+            <p>
+                <label for="provincia">Provincia</label>
+                <!-- Creacion de opciones dentro del formulario-->
+                <select name="provincia" multiple>
+                    <option value="Z">Zaragoza</option>
+                    <option>Huesca</option>
+                    <option>Turuel</option>
+                </select>    
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
